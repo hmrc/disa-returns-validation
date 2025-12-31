@@ -14,6 +14,7 @@ lazy val microservice = Project("disa-returns-validation", file("."))
     scalacOptions += "-Wconf:src=routes/.*:s",
   )
   .settings(CodeCoverageSettings.settings: _*)
+  .settings(PlayKeys.playDefaultPort := 1208)
 
 lazy val it = project
   .enablePlugins(PlayScala)
