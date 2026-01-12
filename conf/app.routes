@@ -1,1 +1,3 @@
 # microservice specific routes
+
+POST        /transfer/enqueue/:submissionId             uk.gov.hmrc.disareturnsvalidation.controllers.TransferController.enqueueSubmissionForTransfer(submissionId)
